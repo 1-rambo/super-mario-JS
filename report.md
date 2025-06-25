@@ -1,6 +1,6 @@
 # 《JavaScript语言Web程序设计》 课程实践报告
 
-**本项目 `Super_Mario_JS` 由小组成员合作完成，Github 仓库地址如下：[Super_Mario_JS](https://github.com/your-username/Super_Mario_JS)**
+**本项目 `super-mario-JS` 由小组成员合作完成，Github 仓库地址如下：[super-mario-JS](https://github.com/1-rambo/super-mario-JS)**
 
 小组成员：安锐博、于宏平
 
