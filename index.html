@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super mario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Super mario</h1>
+            <div class="game-stats">
+                <span>Score: <span id="score">0</span></span>
+                <span>Lives: <span id="lives">3</span></span>
+                <span>Level: <span id="level">1</span></span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="game-controls">
+            <div class="controls-info">
+                <h3>Game control:</h3>
+                <p>← → Move | Space Jump | P Pause</p>
+            </div>
+            <div class="game-buttons">
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn" disabled>Pause</button>
+                <button id="levelSelectBtn">Level Select</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module">
+        import { Game } from './js/Game.js';
+        
+        // waiting for DOM
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('gameCanvas');
+            const game = new Game(canvas);
+            game.start();
+        });
+    </script>
+</body>
+</html> 
